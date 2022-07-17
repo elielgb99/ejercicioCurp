@@ -65,9 +65,9 @@ class index{
 
 //Proceso para cargar página en iFrame
 function loadPage(){
-    var frame = $('#frame');
+    /*var frame = $('#frame');
     var url = 'https://www.gob.mx/curp';
-    frame.attr('src',url).show();
+    frame.attr('src',url).show();*/
 }
 
 //Proceso para cerrar página en iFrame
