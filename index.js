@@ -53,15 +53,17 @@ class index{
 
     //Acción al presionar botón Guardar
     setButtonSave(e){   
-        saveData()
+        //saveData()
         alert("Botón guardar");
+
+        console.log(window.frames[0].document.getElementById('txtNombre'))
 
        /*const myFrame = document.getElementById('frame');
         const iFrameWindow = myFrame.contentWindow;
         console.log(iFrameWindow.document)
         */
 
-        console.log($("#frame").contents().find("#whNombre").text())
+       // console.log($("#frame").contents().find("#whNombre").text())
 
     }
 
@@ -76,8 +78,8 @@ class index{
 function loadPage(){
     
     var frame = $('#frame');
-    //var url = 'https://lacurp.info/consultar-curp/';
-    var url = 'http://virtuami.izt.uam.mx/registro/curp.html';
+    var url = 'https://lacurp.info/consultar-curp/';
+    //var url = 'http://virtuami.izt.uam.mx/registro/curp.html';
     //var url = 'http://www.gob.mx/curp';
     frame.attr('src',url).show();
 
@@ -90,10 +92,6 @@ function finishPage(){
 
 //Proceso para guardar datos resultantes
 function saveData() {
-    
-   
-
-
     /*
     //MEDIANTE FETCH OBTIENE EN FORMATO JSON LOS RESULTADOS DE CURP, CONSULTADA MEDIANTE API
     const options = {
@@ -106,6 +104,15 @@ function saveData() {
             
     fetch('https://curp-renapo.p.rapidapi.com/v1/curp/GABE991202HVZRDL00', options)
         .then(response => response.json())
+        .the(responde => {
+
+            var dato1 = $(response.dato1)
+            var dato1 = $(response.dato1)
+            var dato1 = $(response.dato1)
+            var dato1 = $(response.dato1)
+
+        }
+
         .then(response => console.log(response))
         .catch(err => console.error(err));
 
@@ -115,7 +122,7 @@ function saveData() {
 
 //Proceso para consultar datos guardados
 function queryData(){
-
+    
 }
 
 window.onload = () => new index();
