@@ -54,6 +54,15 @@ class index{
     //Acción al presionar botón Guardar
     setButtonSave(e){   
         saveData()
+        alert("Botón guardar");
+
+       /*const myFrame = document.getElementById('frame');
+        const iFrameWindow = myFrame.contentWindow;
+        console.log(iFrameWindow.document)
+        */
+
+        console.log($("#frame").contents().find("#whNombre").text())
+
     }
 
     //Acción al presionar botón Consultar
@@ -65,9 +74,13 @@ class index{
 
 //Proceso para cargar página en iFrame
 function loadPage(){
-    /*var frame = $('#frame');
-    var url = 'https://www.gob.mx/curp';
-    frame.attr('src',url).show();*/
+    
+    var frame = $('#frame');
+    //var url = 'https://lacurp.info/consultar-curp/';
+    var url = 'http://virtuami.izt.uam.mx/registro/curp.html';
+    //var url = 'http://www.gob.mx/curp';
+    frame.attr('src',url).show();
+
 }
 
 //Proceso para cerrar página en iFrame
@@ -77,6 +90,12 @@ function finishPage(){
 
 //Proceso para guardar datos resultantes
 function saveData() {
+    
+   
+
+
+    /*
+    //MEDIANTE FETCH OBTIENE EN FORMATO JSON LOS RESULTADOS DE CURP, CONSULTADA MEDIANTE API
     const options = {
         method: 'GET',
         headers: {
@@ -89,6 +108,8 @@ function saveData() {
         .then(response => response.json())
         .then(response => console.log(response))
         .catch(err => console.error(err));
+
+    */
 }
 
 

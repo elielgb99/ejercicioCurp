@@ -22,22 +22,20 @@ main {
 
 form {
 	display: flex;
-	min-height: 100px;
+	max-height: 1000px;
 	border-radius: 10px;
 	flex-direction: column;
 }
 
 .form-register {
-  
-    
-	width: 800px;
+	width: 1200px;
 	background: #1C2833;
 	padding-left: 20px;
 	padding-right: 20px;
 	padding-top: 20px;
 	padding-bottom: 20px;
-	margin-left: 283px;
-	margin-right: 283px;
+	margin-left: 130px;
+	margin-right: 130px;
 	margin-top: 20px;
 	margin-bottom: 20px;
 
@@ -51,44 +49,64 @@ form {
 	margin-bottom: 20px;
 	text-align: center;
   }
-	
-  .form-register .botons {
-	width: 100%;
-	background: #4eb36c;
-	border: none;
-	padding: 12px;
-	color: white;
-	margin: 10px 0;
-	font-size: 14px;
+
+  #buttons
+  {
+	  text-align: center;
+  }
+  
+  .design
+  {
+	  display: inline-block;
+	  width: 49.7%;
+	  background: #4eb36c;
+	  border: none;
+	  padding: 12px;
+	  color: white;
+	  margin: 10px 0;
+	  font-size: 14px;
+  }
+  
+  .design2
+  {
+	  display: inline-block;
+	  width: 49.7%;
+	  background: #b34e4e;
+	  border: none;
+	  padding: 12px;
+	  color: white;
+	  margin: 10px 0;
+	  font-size: 14px;
   }
 
-  .form-register .botons2 {
-	width: 100%;
-	background: #b34e4e;
-	border: none;
-	padding: 12px;
-	color: white;
-	margin: 10px 0;
-	font-size: 14px;
-    }
 
-    .form-register .botons3 {
-        width: 100%;
-        background: #dda760;
-        border: none;
-        padding: 12px;
-        color: white;
-        margin: 10px 0;
-        font-size: 14px;
-      }
-
-      .form-register .botons4 {
-        width: 100%;
-        background: #b3874e;
-        border: none;
-        padding: 12px;
-        color: white;
-        margin: 10px 0;
-        font-size: 14px;
-      }
-	
+  #buttons2
+  {
+	  text-align: center;
+  }
+  
+  .design3
+  {
+	  display: inline-block;
+	  width: 49.7%;
+	  background: #4eb3a4;
+	  border: none;
+	  padding: 12px;
+	  color: white;
+	  margin: 10px 0;
+	  font-size: 14px;
+	  
+   
+  }
+  
+  .design4
+  {
+	  display: inline-block;
+	  width: 49.7%;
+	  background: #b3874e;
+	  border: none;
+	  padding: 12px;
+	  color: white;
+	  margin: 10px 0;
+	  font-size: 14px;
+  }
